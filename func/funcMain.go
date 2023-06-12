@@ -1,5 +1,7 @@
 package funcMain
 
+import "math"
+
 func Ishora(num3 float64) (res int) {
 	if num3 == 0 {
 		res = 0
@@ -24,4 +26,10 @@ func KvadraTenglamaIldizlari(A, B, C float64) (string) {
 	}
 	
 	return flag
+}
+
+func DoiraYuziHisobla(r float64) (S float64) {
+	S = r * r * math.Pi
+
+	return S
 }

@@ -17,4 +17,9 @@ func main() {
 
 	fmt.Println(funcMain.Ishora(1) + funcMain.Ishora(0))
 	fmt.Println(funcMain.KvadraTenglamaIldizlari(1, -1, -6))
+
+	fmt.Println(funcMain.DoiraYuziHisobla(5))
+	fmt.Println(funcMain.DoiraYuziHisobla(2.1))
+	fmt.Println(funcMain.DoiraYuziHisobla(8))
+
 }
