@@ -17,7 +17,7 @@ func KabisaYili(num int) string{
 	}
 	return flag
 }
-
+//******************************************************
 func Arifmetika(x, y float64) (num1, num2 float64) {
 	if x == y {
 		num1 = x
@@ -28,7 +28,7 @@ func Arifmetika(x, y float64) (num1, num2 float64) {
 	}	
 	return num1, num2
 }
-
+//******************************************************
 func ErtangiSana (kun, oy int) {
 
 	if kun == 30 && oy == 12 {
@@ -51,5 +51,20 @@ func ErtangiSana (kun, oy int) {
 		fmt.Println(oy)
 	} else {
 		fmt.Println("Siz xato kun, oy kiritdingiz.")
+	}
+}
+//******************************************************
+func TubYokiTubEmas (number int) {
+	count := 0
+	for i := 1; i < number; i++ {
+		if number % i == 0 {
+			count += 1
+		}
+	}
+
+	if count > 2 {
+		fmt.Println("Bu son murakkab son")
+	} else {
+		fmt.Println("Bu son tub son")
 	}
 }

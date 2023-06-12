@@ -10,6 +10,7 @@ func main() {
 	fmt.Println(ifMain.Arifmetika(1, 2))
 	ifMain.ErtangiSana(30, 12)
 	fmt.Println("*********************")
+	ifMain.TubYokiTubEmas(21)
 
 
 }
