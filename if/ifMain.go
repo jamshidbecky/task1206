@@ -29,24 +29,26 @@ func Arifmetika(x, y float64) (num1, num2 float64) {
 	return num1, num2
 }
 
-
 func ErtangiSana (kun, oy int) {
 
-	if (kun >= 1 && kun <= 29) && (oy >= 1 && oy <= 12) {
-		kun += 1
-		fmt.Println(kun, oy)
-	} else if (kun >= 1 && kun <= 30) && (oy >= 1 && oy <= 12) {
+	if kun == 30 && oy == 12 {
+		kun = 1
+		oy = 1
+		fmt.Println(kun)
+		fmt.Println(oy)
+	} else if kun == 30 && oy < 12 {
+		kun = 1
 		oy += 1
-		kun = 1
-		fmt.Println(kun, oy)
-	} else if kun == 30 && oy == 12  {
-		kun = 1
-		oy = 1
-		fmt.Println(kun, oy)
-	} else if oy < 12 && kun < 30 {
-		oy = 1
+		fmt.Println(kun)
+		fmt.Println(oy)
+	} else if kun < 30 && oy == 12 {
 		kun += 1
-		fmt.Println(kun, oy)
+		fmt.Println(kun)
+		fmt.Println(oy)
+	} else if kun < 30 && oy < 12 {
+		kun += 1
+		fmt.Println(kun)
+		fmt.Println(oy)
 	} else {
 		fmt.Println("Siz xato kun, oy kiritdingiz.")
 	}
