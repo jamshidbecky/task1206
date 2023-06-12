@@ -21,5 +21,6 @@ func main() {
 	fmt.Println(funcMain.DoiraYuziHisobla(5))
 	fmt.Println(funcMain.DoiraYuziHisobla(2.1))
 	fmt.Println(funcMain.DoiraYuziHisobla(8))
-
+	fmt.Println(funcMain.RingS(2,1))
+	fmt.Println(funcMain.TriangleP(3, 4))
 }

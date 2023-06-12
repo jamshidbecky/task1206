@@ -30,6 +30,19 @@ func KvadraTenglamaIldizlari(A, B, C float64) (string) {
 
 func DoiraYuziHisobla(r float64) (S float64) {
 	S = r * r * math.Pi
-
 	return S
 }
+
+func RingS(r1, r2 float64) (sFarq float64) {
+	sFarq = (r1 * r1- r2 * r2) * math.Pi
+	return sFarq
+}
+
+func TriangleP(a, b float64) float64 {
+	c := math.Sqrt(a * a + b * b)
+
+	perimetr := a + b + c
+
+	return perimetr
+}
+
