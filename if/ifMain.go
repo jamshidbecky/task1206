@@ -68,3 +68,4 @@ func TubYokiTubEmas (number int) {
 		fmt.Println("Bu son tub son")
 	}
 }
+
