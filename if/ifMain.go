@@ -1,5 +1,7 @@
 package ifMain
 
+import "fmt"
+
 func KabisaYili(num int) string{
 	flag := ""
 	if num % 4 == 0 {
@@ -17,15 +19,35 @@ func KabisaYili(num int) string{
 }
 
 func Arifmetika(x, y float64) (num1, num2 float64) {
-
 	if x == y {
 		num1 = x
 		num2 = y
 	} else if x < y {
 		num1 = (x +y) / 2
 		num2 = 2 * x * y 
-	}
-
-	
+	}	
 	return num1, num2
+}
+
+
+func ErtangiSana (kun, oy int) {
+
+	if (kun >= 1 && kun <= 29) && (oy >= 1 && oy <= 12) {
+		kun += 1
+		fmt.Println(kun, oy)
+	} else if (kun >= 1 && kun <= 30) && (oy >= 1 && oy <= 12) {
+		oy += 1
+		kun = 1
+		fmt.Println(kun, oy)
+	} else if kun == 30 && oy == 12  {
+		kun = 1
+		oy = 1
+		fmt.Println(kun, oy)
+	} else if oy < 12 && kun < 30 {
+		oy = 1
+		kun += 1
+		fmt.Println(kun, oy)
+	} else {
+		fmt.Println("Siz xato kun, oy kiritdingiz.")
+	}
 }
