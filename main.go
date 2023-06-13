@@ -24,4 +24,5 @@ func main() {
 	fmt.Println(funcMain.RingS(2,1))
 	fmt.Println(funcMain.TriangleP(3, 4))
 	fmt.Println(funcMain.SumRange(3, 8) + funcMain.SumRange(1, 3))
+	fmt.Println(funcMain.Calc(2, 3, 7))
 }

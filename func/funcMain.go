@@ -59,3 +59,19 @@ func SumRange(n1, n2 int) (summ  int) {
 	return summ
 }
 
+func Calc(n3, n4, ishora int) (result int) {
+	
+	switch ishora {
+	case 1: 
+		result = n3 - n4
+	case 2:
+		result = n3 * n4
+	case 3:
+		result = n3 / n4
+	default :
+		result = n3 + n4
+	}
+	
+	return result
+}
+
