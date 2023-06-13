@@ -46,3 +46,16 @@ func TriangleP(a, b float64) float64 {
 	return perimetr
 }
 
+func SumRange(n1, n2 int) (summ  int) {
+	summ = 0
+	if n1 > n2 {
+		summ = 0
+	} else {
+		for n1 <= n2 {
+			summ += n1
+			n1 += 1
+		}
+	}
+	return summ
+}
+

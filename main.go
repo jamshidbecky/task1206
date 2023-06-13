@@ -23,4 +23,5 @@ func main() {
 	fmt.Println(funcMain.DoiraYuziHisobla(8))
 	fmt.Println(funcMain.RingS(2,1))
 	fmt.Println(funcMain.TriangleP(3, 4))
+	fmt.Println(funcMain.SumRange(3, 8) + funcMain.SumRange(1, 3))
 }
