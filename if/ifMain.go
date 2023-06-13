@@ -69,3 +69,19 @@ func TubYokiTubEmas (number int) {
 	}
 }
 
+func MukammalSonlar(n int) (mukammalSonsArray []int) {
+	summa := 0
+	for i := 1; i <= n; i++ {
+	for j := 1; j < i; j++ {
+		if i % j == 0 {
+			summa += j
+		}
+	}
+		if i == summa {
+			mukammalSonsArray = append(mukammalSonsArray, i)
+		} 
+	}
+
+	return mukammalSonsArray
+}
+

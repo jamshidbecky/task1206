@@ -75,3 +75,18 @@ func Calc(n3, n4, ishora int) (result int) {
 	return result
 }
 
+
+func Chetvert(x, y float64) (nmadir string)  {
+	if x > 0 && y > 0 { 
+		nmadir = "Birinchi chorak"
+	} else if x < 0 && y > 0 {
+		nmadir = "Ikkinchi chorak"
+	} else if x < 0 && y < 0 {
+		nmadir = "Uchinchi chorak"
+	} else {
+		nmadir = "To'rtinchi chorak"
+	}
+
+	return nmadir
+}
+
