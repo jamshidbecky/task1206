@@ -80,8 +80,8 @@ func MukammalSonlar(n int) (mukammalSonsArray []int) {
 		if i == summa {
 			mukammalSonsArray = append(mukammalSonsArray, i)
 		} 
+		summa = 0
 	}
 
-	return mukammalSonsArray
+	return 
 }
-

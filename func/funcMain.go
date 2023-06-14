@@ -90,3 +90,12 @@ func Chetvert(x, y float64) (nmadir string)  {
 	return nmadir
 }
 
+func Even(int1 int) (ress bool) {
+	if int1 % 2 == 0 {
+		ress = true
+	} else {
+		ress = false
+	}
+	return ress
+}
+
