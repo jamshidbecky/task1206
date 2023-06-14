@@ -36,7 +36,16 @@ func main() {
 
 		// ARRAY
 	// fmt.Println(arrayMain.AppendEl(4, 2, 7))
-	var elSoni int
-	fmt.Scanln(&elSoni)
-	fmt.Println(arrayMain.ReverseArray(elSoni))
+	
+	// var elSoni int
+	// fmt.Scanln(&elSoni)
+	// fmt.Println(arrayMain.ReverseArray(elSoni))
+
+	// var oddArrayN int
+	// fmt.Scanln(&oddArrayN)
+	// fmt.Println(arrayMain.OddArray(oddArrayN))
+
+	var evenArrayN int
+	fmt.Scanln(&evenArrayN)
+	fmt.Println(arrayMain.EvenArray(evenArrayN))
 }
