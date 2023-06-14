@@ -8,14 +8,16 @@ import (
 )
 
 func main() {
+		// IF
 	// fmt.Println(ifMain.KabisaYili(100))
 	// fmt.Println(ifMain.Arifmetika(1, 2))
 	// ifMain.ErtangiSana(30, 12)
 	// ifMain.TubYokiTubEmas(21)
 
+
 	// fmt.Println("*********************")
 
-
+		// FUNCTION
 	// fmt.Println(funcMain.Ishora(1) + funcMain.Ishora(0))
 	// fmt.Println(funcMain.KvadraTenglamaIldizlari(1, -1, -6))
 	// fmt.Println(ifMain.MukammalSonlar(28))
@@ -29,6 +31,12 @@ func main() {
 	// fmt.Println(funcMain.Chetvert(2, -1))
 	// fmt.Println(funcMain.Even(7))
 
-	fmt.Println(arrayMain.AppendEl(4, 2, 7))
 
+	// fmt.Println("*********************")
+
+		// ARRAY
+	// fmt.Println(arrayMain.AppendEl(4, 2, 7))
+	var elSoni int
+	fmt.Scanln(&elSoni)
+	fmt.Println(arrayMain.ReverseArray(elSoni))
 }

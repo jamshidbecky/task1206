@@ -1,17 +1,34 @@
 package arrayMain
 
+import "fmt"
+
 func AppendEl(n, a, b int) (arr []int) {
-	sum := 0
+	arr = []int{0, 0}
 	arr[0] = a
 	arr[1] = b
 	for i := 2; i < n; i++ {
-		sum = arr[i] + arr[i + 1]
+		var sum int
+		for j := 0; j < i; j++ {
+			sum += arr[j]
+		}
 		arr = append(arr, sum)
-		arr[0] = a
-		arr[1] = b
-		sum = 0
 	}
-
-
 	return
 }
+
+func ReverseArray(n int) ([]int) {
+	var beforeArray []int
+	for i := 0; i < n; i++ {
+		fmt.Printf("%v-elementni kiritng: ", i+1)
+		var el int
+		fmt.Scan(&el)
+		beforeArray = append(beforeArray, el)
+	}
+
+	var afterArray []int
+	for i := n - 1; i >= 0; i -= 1 {
+		afterArray = append(afterArray, beforeArray[i])
+	}
+	return afterArray
+}
+

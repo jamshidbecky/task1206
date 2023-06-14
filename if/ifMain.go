@@ -25,7 +25,10 @@ func Arifmetika(x, y float64) (num1, num2 float64) {
 	} else if x < y {
 		num1 = (x +y) / 2
 		num2 = 2 * x * y 
-	}	
+	} else {
+		num2 = (x +y) / 2
+		num1 = 2 * x * y
+	}
 	return num1, num2
 }
 //******************************************************
