@@ -70,3 +70,103 @@ func EvenArray(nuu int) []int {
 	return arrNomiJuft
 }
 
+func Array5(n int) ([]int, []int) {
+	var asosiyArray []int
+	for i := 0; i < n; i++ {
+		fmt.Printf("%v-elementni kiritng: ", i+1)
+		var el int
+		fmt.Scan(&el)
+		asosiyArray = append(asosiyArray, el)
+	}
+
+	var juftArray, toqArray []int
+	for _, v := range asosiyArray {
+		if v % 2 == 0 {
+			juftArray = append(juftArray, v)
+		} else {
+			toqArray = append(toqArray, v)
+		}
+	}
+
+	min := juftArray[0]
+	max := toqArray[0]
+
+	for i := 0; i < len(juftArray) - 1; i++ {
+		if min > juftArray[i] {
+			min = juftArray[i]
+			juftArray = append(juftArray, min)
+		} 
+	}
+
+	for  j:= 0; j < len(toqArray) - 1; j++ {
+		if max < toqArray[j] {
+			max = toqArray[j]
+			toqArray = append(toqArray, max)
+		} 
+	}
+
+	return toqArray, juftArray
+}
+
+func Array6(n, k int) ([]int) {
+	var array []int
+	for i := 0; i < n; i++ {
+		fmt.Printf("%v-elementni kiritng: ", i+1)
+		var el int
+		fmt.Scan(&el)
+		array = append(array, el)
+	}
+
+	var arrayK []int 
+	for i := k; i <= n; i += k {
+		varib := array[i]
+		arrayK = append(arrayK, varib)
+	}
+
+	
+	return arrayK
+}
+
+func Array8(n int) (int) {
+	var array []int
+	for i := 0; i < n; i++ {
+		fmt.Printf("%v-elementni kiritng: ", i+1)
+		var el int
+		fmt.Scan(&el)
+		array = append(array, el)
+	}
+
+	elFirst := 0
+
+	for i := 0; i < len(array); i++ {
+		if array[i] < array[len(array) - 1] {
+			elFirst = array[i]
+			break
+		}
+	}
+		
+	return elFirst
+}
+
+func Array9(n int) (int) {
+	var array []int
+	for i := 0; i < n; i++ {
+		fmt.Printf("%v-elementni kiritng: ", i+1)
+		var el int
+		fmt.Scan(&el)
+		array = append(array, el)
+	}
+
+	elFirst := 0
+
+	for i := len(array) - 1; i >= 0; i -= 1 {
+		if array[len(array) - 1] > array[i] {
+			if array[i] > array[0] {
+			elFirst = array[i]
+			}
+			break
+		}	
+	}
+		
+	return elFirst
+}

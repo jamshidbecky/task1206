@@ -45,7 +45,35 @@ func main() {
 	// fmt.Scanln(&oddArrayN)
 	// fmt.Println(arrayMain.OddArray(oddArrayN))
 
-	var evenArrayN int
-	fmt.Scanln(&evenArrayN)
-	fmt.Println(arrayMain.EvenArray(evenArrayN))
+	// var evenArrayN int
+	// fmt.Scanln(&evenArrayN)
+	// fmt.Println(arrayMain.EvenArray(2))
+
+	//5\\
+	// var arrayElement int
+	// fmt.Scanln(&arrayElement)
+	// fmt.Println(arrayMain.Array5(arrayElement))
+
+	// //6\\
+	// var arrayElement, kSoni int
+	// fmt.Println("nechta element kiritasiz?")
+	// fmt.Scanln(&arrayElement)
+	// fmt.Println("K'ni kiriting?")
+	// fmt.Scanln(&kSoni)
+	// fmt.Println(arrayMain.Array6(arrayElement, kSoni))
+
+	// //8\\
+	// var arrayElement int
+	// fmt.Println("nechta element kiritasiz?")
+	// fmt.Scanln(&arrayElement)
+	// fmt.Println(arrayMain.Array8(arrayElement))
+
+	//9\\
+	var arrayElement int
+	fmt.Println("nechta element kiritasiz?")
+	fmt.Scanln(&arrayElement)
+	fmt.Println(arrayMain.Array9(arrayElement))
+
+
+
 }
