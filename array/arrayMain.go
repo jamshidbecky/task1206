@@ -190,3 +190,27 @@ func Array11(n, k, l int) (float64) {
 
 	return summ
 }
+
+func Array13(n, k, l int) (float64) {
+	var array []int
+	for i := 0; i < n; i++ {
+		fmt.Printf("%v-elementni kiritng: ", i)
+		var el int
+		fmt.Scan(&el)
+		array = append(array, el)
+	}
+
+	sum := 0
+
+	for j := 0; j <= k ; j++ {
+		sum += array[j]
+	}
+
+	for c := l; c < n ; c++ {
+		sum += array[c]
+	}
+
+	summ := float64(sum) / float64(k + 1 + n - l)
+
+	return summ
+}

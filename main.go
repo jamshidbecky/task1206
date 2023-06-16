@@ -75,6 +75,17 @@ func main() {
 	// fmt.Println(arrayMain.Array9(arrayElement))
 
 	//11\\
+	// var arrayElement, kNi, lNI int
+	// fmt.Println("nechta element kiritasiz?")
+	// fmt.Scanln(&arrayElement)
+	// fmt.Println("k element kiriting: ")
+	// fmt.Scanln(&kNi)
+	// fmt.Println("L element kiriting: ")
+	// fmt.Scanln(&lNI)
+	// fmt.Println(arrayMain.Array11(arrayElement, kNi, lNI))
+
+
+	//13\\
 	var arrayElement, kNi, lNI int
 	fmt.Println("nechta element kiritasiz?")
 	fmt.Scanln(&arrayElement)
@@ -82,7 +93,7 @@ func main() {
 	fmt.Scanln(&kNi)
 	fmt.Println("L element kiriting: ")
 	fmt.Scanln(&lNI)
-	fmt.Println(arrayMain.Array11(arrayElement, kNi, lNI))
+	fmt.Println(arrayMain.Array13(arrayElement, kNi, lNI))
 
 
 
