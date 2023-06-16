@@ -170,3 +170,23 @@ func Array9(n int) (int) {
 		
 	return elFirst
 }
+
+func Array11(n, k, l int) (float64) {
+	var array []int
+	for i := 0; i < n; i++ {
+		fmt.Printf("%v-elementni kiritng: ", i+1)
+		var el int
+		fmt.Scan(&el)
+		array = append(array, el)
+	}
+
+	sum := 0
+
+	for j := k; j <= l ; j++ {
+		sum += array[j]
+	}
+
+	summ := float64(sum) / float64(l - k + 1)
+
+	return summ
+}

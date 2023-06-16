@@ -68,11 +68,21 @@ func main() {
 	// fmt.Scanln(&arrayElement)
 	// fmt.Println(arrayMain.Array8(arrayElement))
 
-	//9\\
-	var arrayElement int
+	// //9\\
+	// var arrayElement int
+	// fmt.Println("nechta element kiritasiz?")
+	// fmt.Scanln(&arrayElement)
+	// fmt.Println(arrayMain.Array9(arrayElement))
+
+	//11\\
+	var arrayElement, kNi, lNI int
 	fmt.Println("nechta element kiritasiz?")
 	fmt.Scanln(&arrayElement)
-	fmt.Println(arrayMain.Array9(arrayElement))
+	fmt.Println("k element kiriting: ")
+	fmt.Scanln(&kNi)
+	fmt.Println("L element kiriting: ")
+	fmt.Scanln(&lNI)
+	fmt.Println(arrayMain.Array11(arrayElement, kNi, lNI))
 
 
 
